@@ -1,15 +1,30 @@
-| Supported Targets | ESP32-P4 | ESP32-S3 | ESP32-C3 | ESP32-C6 | ESP32-C5 |
+# Based on an example from
+
+* [espressif/esp-video-components](https://github.com/espressif/esp-video-components)
+  * [/esp_video/examples/simple_video_server](https://github.com/espressif/esp-video-components/tree/master/esp_video/examples/simple_video_server)
+
+## Modified for
+
+* Esp32-P4
+* ESP-IDF 5.1.1
+* VSCode
+* ESP-IDF extension 1.10.2
+* OV5647 Sensor
+
+## Enjoy, BillyBag2
+
+| Supported Targets | *ESP32-P4* | ESP32-S3 | ESP32-C3 | ESP32-C6 | ESP32-C5 |
 |-------------------|----------|----------|----------|----------|----------|
 
-# Simple Video Server Example
+## Simple Video Server Example
 
 *(See the [README.md](../README.md) file in the upper level [examples](../) directory for more information about examples.)*
 
-## Overview
+### Overview
 
 This example demonstrates how to create multiple HTTP servers on a local network using different ports. These servers can be accessed through a web browser to provide various video streaming and image capture functionalities.
 
-## API Endpoints
+### API Endpoints
 
 The example provides the following REST API endpoints:
 
@@ -25,7 +40,7 @@ The example provides the following REST API endpoints:
 
 > **Note (*1)**: The server continuously streams JPEG images from the background to the client. When saving images from the webpage, the saved images may not reflect real-time data.
 
-### Domain Name Access
+#### Domain Name Access
 
 By default, the example enables mDNS (Multicast DNS), allowing you to access the server using a domain name instead of an IP address. For example:
 - Image capture: `http://esp-web.local/api/capture_image?source=0`
@@ -33,9 +48,9 @@ By default, the example enables mDNS (Multicast DNS), allowing you to access the
 
 You can also access all URLs using the device's IP address directly.
 
-## Getting Started
+### Getting Started
 
-### Hardware Configuration
+#### Hardware Configuration
 
 Before using this example, please refer to the [video initialization configuration guide](../common_components/example_video_common/README.md) for detailed information about:
 - Board-level configuration
@@ -43,7 +58,7 @@ Before using this example, please refer to the [video initialization configurati
 - GPIO pin assignments
 - Clock frequency settings
 
-### Project Configuration
+#### Project Configuration
 
 Open the project configuration menu:
 
@@ -51,7 +66,7 @@ Open the project configuration menu:
 idf.py menuconfig
 ```
 
-#### Network Connection Setup
+##### Network Connection Setup
 
 Navigate to **Example Connection Configuration**:
 
@@ -71,13 +86,13 @@ Navigate to **Example Connection Configuration**:
 In the `Wi-Fi Remote` menu:
 - Select the slave target to connect to the MCU
 
-#### Camera Sensor Configuration
+##### Camera Sensor Configuration
 
 Navigate to **Espressif Camera Sensors Configurations**:
 - Select the camera sensor you want to use
 - Choose the target output format for the sensor
 
-#### Example-Specific Configuration
+##### Example-Specific Configuration
 
 1. **Set the target platform:**
    ```bash
@@ -164,7 +179,7 @@ Navigate to **Espressif Camera Sensors Configurations**:
                            ( ) RGB565 240x240 25fps, DVP 8-bit, 20M input
    ```
 
-## Building and Running
+### Building and Running
 
 1. **Build and flash the project:**
    ```bash
@@ -175,7 +190,7 @@ Navigate to **Espressif Camera Sensors Configurations**:
 
 2. **For complete setup instructions**, see the [ESP-IDF Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/get-started/index.html).
 
-## Expected Output
+### Expected Output
 
 When running this example, you should see output similar to this in the serial monitor:
 
@@ -208,7 +223,7 @@ I (5918) main_task: Returned from app_main()
 ...
 ```
 
-## Accessing the Web Interface
+### Accessing the Web Interface
 
 1. **Open your web browser** and navigate to one of the following:
    - `http://esp-web.local` (using mDNS)
@@ -222,9 +237,9 @@ I (5918) main_task: Returned from app_main()
 
 ![Camera Web Interface](./pic/camera_web_pic.png)
 
-## Troubleshooting
+### Troubleshooting
 
-### Common Issues
+#### Common Issues
 
 **1. I2C Transaction Errors**
 

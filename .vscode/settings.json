@@ -12,6 +12,17 @@
     "--compile-commands-dir=c:\\Users\\bagsh\\OneDrive\\Documents\\github\\simple_video_server\\build"
   ],
   "cSpell.words": [
+    "EMAC",
+    "Espressif",
+    "fefb",
+    "mdns",
+    "menuconfig",
+    "MIPI",
+    "MJPEG",
+    "netif",
+    "psram",
+    "RGBP",
+    "SCCB",
     "sdkconfig"
   ]
 }
