@@ -15,6 +15,10 @@ elseif(CONFIG_EXAMPLE_SELECT_ESP32S3_EYE)
     list(APPEND inc_dirs "include/boards/esp32-s3-eye")
 elseif(CONFIG_EXAMPLE_SELECT_CUSTOMIZED_DEV_BOARD)
     list(APPEND inc_dirs "include/boards/customized")
+elseif(CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_WIFI6)
+    list(APPEND inc_dirs "include/boards/ws-esp32-p4-wifi6")
+elseif(CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV)
+    list(APPEND inc_dirs "include/boards/jc-esp32-p4-m3-dev")
 endif()
 
 idf_component_register(SRCS "${srcs}"

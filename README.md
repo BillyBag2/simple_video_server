@@ -11,6 +11,26 @@
 * ESP-IDF extension 1.10.2
 * OV5647 Sensor
 
+## Guition JC-ESP32P4-M3 DEV Board
+
+* [Product page](https://www.surenoo.com/products/27872758)
+
+sdkconfig.defaults.esp32p4
+
+```bash
+CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV=y
+```
+
+## Waveshare ESP32-P4-WIFI6
+
+* [Product Page](https://www.waveshare.com/esp32-p4-wifi6.htm)
+
+sdkconfig.defaults.esp32p4
+
+```bash
+CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_WIFI6=y
+```
+
 ## Enjoy, BillyBag2
 
 | Supported Targets | *ESP32-P4* | ESP32-S3 | ESP32-C3 | ESP32-C6 | ESP32-C5 |

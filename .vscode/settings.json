@@ -12,17 +12,38 @@
     "--compile-commands-dir=c:\\Users\\bagsh\\OneDrive\\Documents\\github\\simple_video_server\\build"
   ],
   "cSpell.words": [
+    "autofocus",
+    "datasheet",
     "EMAC",
+    "endchoice",
+    "endmenu",
     "Espressif",
     "fefb",
+    "Guition",
+    "LEDC",
+    "LINESYNC",
     "mdns",
     "menuconfig",
     "MIPI",
     "MJPEG",
     "netif",
+    "PCLK",
     "psram",
+    "PWDN",
     "RGBP",
     "SCCB",
-    "sdkconfig"
-  ]
+    "SCLK",
+    "sdkconfig",
+    "SPIRAM",
+    "srcs",
+    "UNICORE",
+    "VSYNC",
+    "Waveshare",
+    "XCLK"
+  ],
+  "idf.portWin": "COM4",
+  "idf.flashType": "UART",
+  "idf.espIdfPathWin": "c:\\Users\\bagsh\\esp\\v5.5.1\\esp-idf",
+  "idf.toolsPathWin": "C:\\Users\\bagsh\\.espressif",
+  "idf.pythonInstallPath": "C:\\Users\\bagsh\\.espressif\\tools\\idf-python\\3.11.2\\python.exe"
 }
