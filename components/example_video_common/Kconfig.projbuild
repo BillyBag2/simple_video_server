@@ -43,6 +43,16 @@ menu "Example Video Initialization Configuration"
                 Use a custom development board requiring manual GPIO configuration.
                 You will need to configure all camera interface pins according to
                 your hardware design.
+        config EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_WIFI6
+            bool "Waveshare ESP32-P4-WiFi6 Board"
+            depends on IDF_TARGET_ESP32P4
+            help
+                Waveshare ESP32-P4-WiFi6 development board.
+        config EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV
+            bool "Guition JC-ESP32P4-M3 DEV Board"
+            depends on IDF_TARGET_ESP32P4
+            help
+                Guition JC-ESP32P4-M3-DEV board.
     endchoice
 
     menu "Select and Set Camera Sensor Interface"

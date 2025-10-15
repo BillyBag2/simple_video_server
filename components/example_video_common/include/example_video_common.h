@@ -12,6 +12,8 @@
 #include "esp_video_ioctl.h"
 #include "example_video_common_board.h"
 
+// #error "HERE!"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
