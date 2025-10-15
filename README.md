@@ -9,11 +9,11 @@
 * ESP-IDF 5.1.1
 * VSCode
 * ESP-IDF extension 1.10.2
-* OV5647 Sensor
 
 ## Guition JC-ESP32P4-M3 DEV Board
 
 * [Product page](https://www.surenoo.com/products/27872758)
+* OV5647 Sensor
 
 sdkconfig.defaults.esp32p4
 
@@ -21,7 +21,14 @@ sdkconfig.defaults.esp32p4
 CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV=y
 ```
 
-## Waveshare ESP32-P4-WIFI6
+### TODO, JC-ESP32-P4-M3-DEV
+
+* [ ] Wifi support
+* [ ] Fully configure project for JC-ESP32-P4-M3-DEV
+* [x] Ethernet support
+* [x] Basic streaming works.
+
+## Waveshare ESP32-P4-WIFI6 (WIP)
 
 * [Product Page](https://www.waveshare.com/esp32-p4-wifi6.htm)
 
@@ -31,7 +38,13 @@ sdkconfig.defaults.esp32p4
 CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_WIFI6=y
 ```
 
+### TODO WS ESP32-P4-WIFI6
+
+* [ ] Wait for compatible camera.
+
 ## Enjoy, BillyBag2
+
+Original README...
 
 | Supported Targets | *ESP32-P4* | ESP32-S3 | ESP32-C3 | ESP32-C6 | ESP32-C5 |
 |-------------------|----------|----------|----------|----------|----------|
