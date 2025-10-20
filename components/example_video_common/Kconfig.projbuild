@@ -48,9 +48,20 @@ menu "Example Video Initialization Configuration"
             depends on IDF_TARGET_ESP32P4
             help
                 Waveshare ESP32-P4-WiFi6 development board.
+        config EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_ESP32_P4_ETH
+            bool "Waveshare ESP32-P4-ETH Board"
+            depends on IDF_TARGET_ESP32P4
+            # Force 32MB flash size (sets CONFIG_ESPTOOLPY_FLASHSIZE_32MB=y)
+            select ESPTOOLPY_FLASHSIZE_32MB
+            help
+                Waveshare ESP32-P4-ETH board.
         config EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV
             bool "Guition JC-ESP32P4-M3 DEV Board"
             depends on IDF_TARGET_ESP32P4
+            # Force Boya flash support
+            select SPI_FLASH_SUPPORT_BOYA_CHIP
+            # Force 16MB flash size (sets CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y)
+            select ESPTOOLPY_FLASHSIZE_16MB
             help
                 Guition JC-ESP32P4-M3-DEV board.
     endchoice
