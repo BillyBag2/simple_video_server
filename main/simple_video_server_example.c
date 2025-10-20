@@ -27,7 +27,7 @@
 #include "lwip/inet.h"
 #include "lwip/apps/netbiosns.h"
 #include "example_video_common.h"
-#include "esp_wifi_remote.h"
+//#include "esp_wifi_remote.h"
 
 #define EXAMPLE_CAMERA_VIDEO_BUFFER_NUMBER  CONFIG_EXAMPLE_CAMERA_VIDEO_BUFFER_NUMBER
 
