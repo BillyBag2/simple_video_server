@@ -27,6 +27,7 @@
 #include "lwip/inet.h"
 #include "lwip/apps/netbiosns.h"
 #include "example_video_common.h"
+//#include "esp_wifi_remote.h"
 
 #define EXAMPLE_CAMERA_VIDEO_BUFFER_NUMBER  CONFIG_EXAMPLE_CAMERA_VIDEO_BUFFER_NUMBER
 
@@ -772,6 +773,14 @@ static void initialise_mdns(void)
                                      sizeof(serviceTxtData) / sizeof(serviceTxtData[0])));
 }
 
+static void wifi_init_sta(void)
+{
+#ifndef CONFIG_WIFI_RMT_OVER_EPPP_HOST_SIDE_NETIF
+    // if host-side networking enabled, the wifi-station netif will be created on host
+    //esp_netif_create_default_wifi_sta();
+#endif
+}
+
 void app_main(void)
 {
     esp_err_t ret = nvs_flash_init();
@@ -819,6 +828,9 @@ void app_main(void)
         }
 #endif /* EXAMPLE_ENABLE_USB_UVC_CAM_SENSOR */
     };
+
+    wifi_init_sta();
+
     int config_count = sizeof(config) / sizeof(config[0]);
 
     assert(config_count > 0);

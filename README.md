@@ -10,6 +10,10 @@
 * VSCode
 * ESP-IDF extension 1.10.2
 
+## Changing boards
+
+To change boards, edit the file `sdkconfig.defaults.esp32p4` to uncomment the desired board configuration and comment out the others.
+
 ## Guition JC-ESP32P4-M3 DEV Board
 
 * [Product page](https://www.surenoo.com/products/27872758)
@@ -21,26 +25,33 @@ sdkconfig.defaults.esp32p4
 CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV=y
 ```
 
-### TODO, JC-ESP32-P4-M3-DEV
+### TODO (JC-ESP32-P4-M3-DEV)
 
 * [ ] Wifi support
 * [ ] Fully configure project for JC-ESP32-P4-M3-DEV
 * [x] Ethernet support
 * [x] Basic streaming works.
 
-## Waveshare ESP32-P4-WIFI6 (WIP)
+## Waveshare ESP32-P4-ETH
 
 * [Product Page](https://www.waveshare.com/esp32-p4-wifi6.htm)
 
 sdkconfig.defaults.esp32p4
 
 ```bash
-CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_WIFI6=y
+CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_ETH=y
 ```
 
-### TODO WS ESP32-P4-WIFI6
+### TODO (WS ESP32-P4-ETH)
 
-* [ ] Wait for compatible camera.
+* [ ] Wifi support
+* [ ] Fully configure project for WS ESP32-P4-WIFI6
+* [x] Ethernet support
+* [x] Basic streaming works.
+
+## TODO (General)
+
+* [ ] Add support for Waveshare ESP32-P4-WIFI6 board
 
 ## Enjoy, BillyBag2
 

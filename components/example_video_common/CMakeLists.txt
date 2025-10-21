@@ -19,6 +19,8 @@ elseif(CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_WIFI6)
     list(APPEND inc_dirs "include/boards/ws-esp32-p4-wifi6")
 elseif(CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV)
     list(APPEND inc_dirs "include/boards/jc-esp32-p4-m3-dev")
+elseif(CONFIG_EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_ESP32_P4_ETH)
+    list(APPEND inc_dirs "include/boards/ws-esp32-p4-eth")
 endif()
 
 idf_component_register(SRCS "${srcs}"

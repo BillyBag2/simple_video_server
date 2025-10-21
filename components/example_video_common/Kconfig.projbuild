@@ -23,36 +23,30 @@ menu "Example Video Initialization Configuration"
                 Official Espressif ESP32-P4 Function Evaluation Board Version 1.5.
                 Includes predefined GPIO configurations for camera and display interfaces.
 
-        config EXAMPLE_SELECT_ESP32P4_EYE
-            bool "ESP32-P4-EYE"
-            depends on IDF_TARGET_ESP32P4
-            help
-                Espressif ESP32-P4-EYE development board optimized for computer vision
-                and AI applications with integrated camera and display.
-
-        config EXAMPLE_SELECT_ESP32S3_EYE
-            bool "ESP32-S3-EYE"
-            depends on IDF_TARGET_ESP32S3
-            help
-                Espressif ESP32-S3-EYE development board with integrated camera sensor
-                and LCD display for AI and computer vision applications.
-
         config EXAMPLE_SELECT_CUSTOMIZED_DEV_BOARD
             bool "Customized Development Board"
             help
                 Use a custom development board requiring manual GPIO configuration.
                 You will need to configure all camera interface pins according to
                 your hardware design.
+
         config EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_WIFI6
             bool "Waveshare ESP32-P4-WiFi6 Board"
             depends on IDF_TARGET_ESP32P4
             help
                 Waveshare ESP32-P4-WiFi6 development board.
+
         config EXAMPLE_SELECT_ESP32P4_FUNCTION_JC_ESP32_P4_MC_DEV
             bool "Guition JC-ESP32P4-M3 DEV Board"
             depends on IDF_TARGET_ESP32P4
             help
                 Guition JC-ESP32P4-M3-DEV board.
+
+        config EXAMPLE_SELECT_ESP32P4_FUNCTION_WS_BOARD_ETH
+            bool "Waveshare ESP32-P4-ETH Board"
+            depends on IDF_TARGET_ESP32P4
+            help
+                Waveshare ESP32-P4-ETH development board.
     endchoice
 
     menu "Select and Set Camera Sensor Interface"
