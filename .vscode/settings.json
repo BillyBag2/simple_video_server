@@ -41,7 +41,7 @@
     "Waveshare",
     "XCLK"
   ],
-  "idf.portWin": "COM8",
+  "idf.portWin": "COM4",
   "idf.flashType": "UART",
   "idf.espIdfPathWin": "c:\\Users\\bagsh\\esp\\v5.5.1\\esp-idf",
   "idf.toolsPathWin": "C:\\Users\\bagsh\\.espressif",
